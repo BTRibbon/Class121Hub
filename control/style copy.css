@@ -1,0 +1,80 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.menu li ,.function{
+    float: left;
+}
+  
+li a , .function {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover , .function:hover{
+    background-color: #111;
+}
+  
+body {
+    text-align: center;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+body {
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1000px) {
+    ul {
+        flex-direction: column;
+        font-size: 24px;
+    }
+    li {
+        padding: 2% 3%;  
+        float: center;
+    }
+    body {   
+        font-size: 30px;
+    }
+}
+
+.menu .function ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    float:center;
+    position: center;
+  }
+  
+  .menu .function:hover ul {
+    max-height: 500px;
+  }
+  
+  .menu .function ul li a {
+    color: white;
+  }
+  .menu .function ul li{
+    float:center;
+    clear:left;
+    list-style-type: none;
+    
+  }
+  
+  .menu .function ul {
+      position: absolute;
+      background-color: #333;
+      width: 100%;
+  }

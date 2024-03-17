@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Link files-->
+    <link rel="stylesheet" href="stylerandom.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="menuscript.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        $("#menuscript").load("menuscript.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--Menu-->
+    <div id="menuscript"></div>
+    <!--Menu-->
+    <div class="title">
+      <h1>Random People</h1>
+    </div>
+    <div class="buttons">
+      <button class="btn-hover color-1" id="generate">Generate</button>
+    </div>
+    <div class ="textt">
+      <p id="result"></p>
+      <p id="acceptit"></p>
+    </div>
+    <video id="rickroll"></video>
+    <!-- Link your JavaScript file here -->
+    <script src="randomscript.js"></script>
+  </body>
+</html>

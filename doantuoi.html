@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <!--Link files-->
+    <link rel="stylesheet" href="doantuoi.css">
+    <!--Link files-->
+   <!--Menu-->
+   <link rel="stylesheet" href="style.css">
+   <script src="menuscript.js"></script>
+   <script src="jquery.js"></script>
+   <script>
+     $(function() {
+       $("#menuscript").load("menuscript.html");
+     });
+   </script>
+  <div id="menuscript"></div>
+<!--Menu-->
+    <body>
+         <h1> Máy đoán tuổi trí tuệ sinh học </h1>
+         <h2>(Bio-Intellect age predicting machine)</h2>
+            <label for="nhaptuoi">Nhập số tuổi của bạn:</label>
+            <input type="text" id="nhaptuoi" name="nhaptuoi"><br><br>
+            <button id="submit">Submit</button>
+            <p id="result"></p>
+            <p id="morewords"></p>
+            <script src="doantuoi.js"></script>
+    </body>
+</html> 

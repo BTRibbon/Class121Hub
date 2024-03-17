@@ -1,0 +1,25 @@
+#button-container {
+    text-align: center;
+}
+
+#rock, #paper, #scissors {
+    max-height: 10%;
+    max-width: 10%;
+    transition: all 0.5s ease-in;
+}
+#rock:hover, #paper:hover, #scissors:hover {
+    transform: scale(90%);
+    left:50%;
+}
+#scissors {
+    max-height: 12%;
+    max-width: 12%;
+}
+
+
+#rock.active{
+    float:left;
+    transition: all 0.5s ease-in;
+}
+
+

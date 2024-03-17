@@ -1,0 +1,79 @@
+function win() {
+    console.log("you've won!");
+}
+
+function lose() {
+    console.log("you've lost");
+}
+
+console.log("rock paper scissors game , type down your moves or (1)rock (2)paper (3)scissors ");
+console.log("enter your move here:");
+let i = prompt();
+try {
+    i = parseInt(i);
+    let c = 0;
+    if (parseInt(i) === 1) {
+        console.log("you did a rock ");
+    } else if (parseInt(i) === 2) {
+        console.log("you did a paper");
+    } else if (parseInt(i) === 3) {
+        console.log("you did a scissors");
+    }
+} catch (ValueError) {
+    let c = i.toLowerCase();
+    i = 0;
+    if (c === "rock") {
+        console.log("you did a rock ");
+    } else if (c === "paper") {
+        console.log("you did a paper");
+    } else if (c === "scissors") {
+        console.log("you did a scissors");
+    }
+}
+let r = Math.floor(Math.random() * 3) + 1;
+setTimeout(function () {
+    if (r === 1) {
+        w = "rock";
+        console.log("computer choose rock");
+    } else if (r === 2) {
+        w = "paper";
+        console.log("computer choose paper");
+    } else if (r === 3) {
+        w = "scissors";
+        console.log("computer choose scissors");
+    }
+}, 3000);
+setTimeout(function () {
+    if (i === r || c === w) {
+        console.log("draw");
+
+    } else {
+        if (i === 1 || c === "rock") {
+            if (r === 2 || w === "paper") {
+                lose();
+
+            } else if (r === 3 || w === "scissors") {
+                win();
+
+            }
+        } else if (i === 2 || c === "paper") {
+            if (r === 1 || w === "rock") {
+                win();
+
+            } else if (r === 3 || w === "scissors") {
+                lose();
+
+            }
+        } else if (i === 3 || c === "scissors") {
+            if (r === 1 || w === "rock") {
+                lose();
+
+            } else if (r === 2 || w === "paper") {
+                win();
+
+            }
+        } else {
+            console.log("something went wrong");
+        }
+    }
+}, 5000);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="rockpaperscissors.css">
+<!--Menu-->
+<link rel="stylesheet" href="style.css">
+<script src="menuscript.js"></script>
+<script src="jquery.js"></script>
+<script>
+  $(function() {
+    $("#menuscript").load("menuscript.html");
+  });
+</script>
+<div id="menuscript"></div>
+<!--Menu-->
+<script src="rockpaperscissors.js"></script>
+<body>
+    <h1>Trò Chơi Búa Kéo Bao</h1>
+    <h2>Vs Computer</h2>
+<div id="button-container">
+    <input type="image" src="resource/búa.png" name="saveForm" class="btTxt submit" id="rock" onclick="clicked(this)" />
+    <input type="image" src="resource/kéo.png" name="saveForm" class="btTxt submit" id="scissors" onclick="clicked(this)" />
+    <input type="image" src="resource/bao.png" name="saveForm" class="btTxt submit" id="paper" onclick="clicked(this)" />
+</div>
+<img id="computer" src="">
+<img id="testingimage" src="">
+<p id="winner"></p>
+</body>
+</html> 
