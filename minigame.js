@@ -131,6 +131,7 @@ function showNextButton() {
 }
 
 function showResults() {
+    feedbackElement.classList.remove("correct", "wrong");
     if (isWin) {
         displayWinScreen();
     } else {
