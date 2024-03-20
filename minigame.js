@@ -141,13 +141,17 @@ function showResults() {
 }
 
 function resetQuiz() {
+    loseContainer.style.display = "none";
     currentQuestion = 0;
     score = 0;
     isWin = false;
     sumpoint.textContent="Điểm:"+0+"/5";
-    displayQuestion();
     replayButton.style.display = "none"; // Hide replay button after reset
     feedbackElement.textContent = "";
+    introContainer.style.display = "none";
+    quizContainer.style.display = "block";
+    sumpoint.style.display = "block";
+    displayQuestion();
     // Reattach event listeners to choices
 }
 
