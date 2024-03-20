@@ -60,7 +60,6 @@ h1, p {
 .fade-in {
     opacity: 1; /* fully visible */
 }
-/* Existing CSS code remains the same */
 
 
 .content {
@@ -68,3 +67,67 @@ h1, p {
     margin-top: 20px;
     font-size: 18px;
 }
+
+
+
+/*slide shows---------------------------*/
+
+/* Styles for the slideshow container */
+.slideshow-container , .container2 {
+    width:auto;
+    position: relative; /* Allow absolute positioning of elements within */
+    border: 20px solid #1130BA;
+    padding: 10px 10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #000;
+    background-color: #f1f1f1;
+ /* Center the slideshow horizontally */
+
+  }
+  
+  /* Styles for individual slides */
+  .mySlides {
+    margin:0 auto;
+    display: grid; /* Initially hide all slides */
+    position: relative; /* Allow absolute positioning for layering */
+    width:auto; /* Take up the full width of the container */
+    height:auto; /* Take up the full height of the container */
+  }
+  
+  /* Add a smooth fading transition effect for slides */
+  .mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius : 2%;
+    opacity:0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .mySlides img.active { /* Add a new class for active slide */
+    opacity: 1; /* Set opacity to 1 (fully visible) on active slide */
+  }
+  
+  
+  /* Styles for captions (optional) */
+  .caption {
+    position: absolute; /* Allow absolute positioning within the slide */
+    bottom: 8px; /* Position the caption at the bottom */
+    width: 100%; /* Span the full width of the slide */
+    text-align: center; /* Center the caption text */
+    color: #f2f2f2; /* Set the caption text color */
+    font-family: Arial, sans-serif; /* Set the caption font */
+    font-size: 18px; /* Set the caption font size */
+    transition: 0.5s ease; /* Add a smooth fading transition for captions (optional) */
+  }
+  
+  /* Add a hover effect for captions to improve readability */
+  .mySlides:hover .caption {
+    background-color: rgba(0,0,0,0.5); /* Add a semi-transparent background on hover */
+  }
+  
+  /* Styles for navigation buttons (optional) */
+
+  
+
+  
+
+  

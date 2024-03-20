@@ -33,6 +33,9 @@ ul{
   
 .menu li {
     float: left;
+    border: 5px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 20px;
 }
   
 li a , .function li a , .function p{

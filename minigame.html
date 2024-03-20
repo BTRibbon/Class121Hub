@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <!--Link files-->
-    <script src="minigame.js"></script>
-
+    <link rel="stylesheet" href="minigame.css">
     <!--Link files-->
    <!--Menu-->
    <link rel="stylesheet" href="style.css">
@@ -15,12 +14,43 @@
    </script>
   <div id="menuscript"></div>
     <!--Menu-->
-<head>
-  <title>Jumping Game</title>
-  <link rel="stylesheet" href="minigame.css">
-</head>
-<body>
-  <canvas id="canvas"></canvas>
-  <p id="test">Tea</p>
-</body>
-</html> 
+    <head>
+      <!--<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="minigame.css">
+        -->
+  </head>
+  <body>
+      <div id="intro-container">
+          <h1>Đố vui có thưởng!</h1>
+          <p>Bạn đã sẵn sàng cho thử thách này chưa</p>
+          <button id="start-button">Tôi đã sẵn sàng!</button>
+      </div>
+      <div id="quiz-container" style="display: none;">
+          <h2 id="question"></h2>
+          <ul id="choices"></ul>
+          <p id="feedback"></p>
+          <button id="next-button">Câu Tiếp Theo</button>
+          <button id="replay-button" style="display: none;">Thử Lại</button>
+          <p id="checking" style="display:none;">checking</p>
+      </div>
+      <div id="win-container" style="display: none;">
+          <h1>Chúc Mừng , Bạn Đã Thắng Rồi!</h1>
+          <p>như hướng dẫn , hãy đến lớp chúng mình , A1 để nhận quà nhé!</p>
+          <img id="winpic" src="resource/backgroundremoved.png">
+      </div>
+      <div id="lose-container" style="display: none;">
+        <h1>Tiếc Quá</h1>
+        <p>tiếc quá bạn đã thua rồi , bạn có muốn thử lại không?</p>
+    </div>
+      
+      <p id="sumpoint" style="display:none;">Điểm:0/5</p>
+      <p>Luật chơi:</p>
+      <p>trả lời được 3/5 câu hỏi bạn sẽ chiến thắng</p>
+      <p>Nếu bạn đã chiến thắng , hãy đến lớp mình với màng hình chứng nhận để có thể nhận những phần quà hẫp dẫn nhé@</p>
+      <p>Lưu ý: phần quà có hạn , hiện lớp vẫn còn quà , hết quà web sẽ update nên hãy nhanh tay nhé , mỗi thiết bị chỉ nhận đc tối đa một phần quà thôi nha</p>
+      
+      <script src="jquery.js"></script>
+      <script src="minigame.js"></script>
+  </body>
+    </html>
