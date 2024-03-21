@@ -75,20 +75,32 @@ h1, p {
 /* Styles for the slideshow container */
 .slideshow-container , .container2 {
     width:auto;
+    height: 700px;
+
     position: relative; /* Allow absolute positioning of elements within */
     border: 20px solid #1130BA;
     padding: 10px 10px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px #000;
     background-color: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
  /* Center the slideshow horizontally */
 
+  }
+
+  .slideshow-container p{
+    position: relative;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 10px;
   }
   
   /* Styles for individual slides */
   .mySlides {
     margin:0 auto;
-    display: grid; /* Initially hide all slides */
     position: relative; /* Allow absolute positioning for layering */
     width:auto; /* Take up the full width of the container */
     height:auto; /* Take up the full height of the container */
@@ -96,8 +108,10 @@ h1, p {
   
   /* Add a smooth fading transition effect for slides */
   .mySlides img {
-    width: 100%;
-    height: auto;
+    position:relative;
+    width: auto;
+    max-width: 800px;
+    max-height:600px;
     border-radius : 2%;
     opacity:0;
     transition: opacity 1.5s ease-in-out;
