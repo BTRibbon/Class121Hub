@@ -96,7 +96,7 @@ function handleAnswer(userAnswer) {
 
     if (currentQuestion === 5-1) {
         
-        if(score == 3) {
+        if(score >= 3) {
             isWin=true;
         }else{
             isWin=false;
