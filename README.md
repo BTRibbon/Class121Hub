@@ -1,4 +1,2 @@
 # classproject
-seriously idk what im doing  
-hế lô huy  
-bug nhiều ở random
+check the minigame.js 😭😭😭
