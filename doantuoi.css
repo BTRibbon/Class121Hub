@@ -1,14 +1,32 @@
-h1{
-    text-align: center;
+
+#submit{
+    font-size: 20px; /* Larger font size */
+    padding: 12px 24px; /* Bigger padding for larger button */
+    border-radius: 4px; /* Optional: rounded corners */
+    border: none; /* No border */
+    background-color: #04AA6D; /* Background color */
+    color: white; /* Text color */
 
 }
-
+h1{
+    text-align: center;
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-size:50px;
+}
+input[type="text"] {
+    font-size: 40px;
+    text-align:center;
+}
 @media screen and (max-width: 1000px) {
     .nhaptuoi1{
         font-size:50px;
         margin:auto;
         padding:30px;
-        }
+    }
     #nhaptuoi{
         height:50px;
         width:300px
@@ -16,6 +34,15 @@ h1{
     input[type="text"] {
         font-size: 50px;
         text-align:center;
+    }
+    #submit{
+        font-size: 40px; /* Larger font size */
+        padding: 24px 48px; /* Bigger padding for larger button */
+        border-radius: 4px; /* Optional: rounded corners */
+        border: none; /* No border */
+        background-color: #04AA6D; /* Background color */
+        color: white; /* Text color */
+    
     }
     
 }

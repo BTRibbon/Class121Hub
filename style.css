@@ -44,6 +44,12 @@ li a , .function li a , .function p{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
   
 /* Change the link color to #111 (black) on hover */
@@ -77,3 +83,10 @@ li a:hover , .function:hover {
     }
 
 }
+
+p{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    

@@ -140,8 +140,11 @@ h1, p {
   
   /* Styles for navigation buttons (optional) */
 
-  
+  .titleclass{
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-  
 
   
