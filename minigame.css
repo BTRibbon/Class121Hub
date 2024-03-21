@@ -4,17 +4,25 @@ body {
 }
 
 #intro-container, #quiz-container, #win-container {
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 10px solid #ddd;
+  border-radius: 10px;
   padding: 20px;
   margin: 0 auto;
   width: auto;
+  max-width:1000px;
 }
 
 #choices li {
   list-style: none;
   margin: 10px 0;
   cursor: pointer;
+  border: 3px solid #25c31f;
+  border-radius: 30px;
+  margin:0 auto;
+  padding:10px;
+  max-width: 100px;
+  background-color: rgb(251, 192, 192);
+  display:inline-block;
 }
 
 #feedback, #secret-message {
@@ -60,9 +68,13 @@ body {
     
   }
   #choices li {
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
     font-size:50px;
+    list-style: none;
+    cursor: pointer;
+    border: 10px solid #25c31f;
+    border-radius: 30px;
+    margin:0 auto;
+    max-width: none;
+    margin:auto;
   }
 }

@@ -56,7 +56,7 @@ function printResult() {
             resultElement.textContent = "số tuổi của bạn là : " + inputValue;
         }, 12000));
         lolTimeouts.push(setTimeout(() => {
-            morewordsElement.textContent = "Cho một tràng vổ tay ";
+            morewordsElement.textContent = "Cho một tràng vổ tay 👏👏";
         }, 16000));
     } else {
         dotdotdot();
