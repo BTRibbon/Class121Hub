@@ -116,6 +116,7 @@ function displayQuestion() {
 }
 
 function handleAnswer(userAnswer) {
+    
     const correctAnswer = questions[currentQuestion].answer;
     const isCorrect = userAnswer === correctAnswer;
 
