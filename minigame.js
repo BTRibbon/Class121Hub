@@ -49,7 +49,6 @@ const questions = [
     { question: "Cái gì con trai có mà con gái không có?" , choices: ["Bố", "Anh", "Em", "Tất cả"], answer: 3 },
     { question: "Cái gì con gái và con trai đều có?" , choices: ["Mẹ", "Chị", "Em", "Tất cả"], answer: 3 },
     { question: "Cái gì có một mà không có hai, có hai mà không có ba?" , choices: ["Cái số 1", "Cái số 2", "Cái số 3", "Cái số 4"], answer: 1 },
-    { question: "Con gì đẻ ra con nhưng không phải là mẹ?" , choices: ["Con gà", "Con mèo", "Con chó", "Con ma"], answer: 0 },
     { question: "Con gì không có chân mà vẫn đi được?" , choices: ["Con ốc", "Con sên", "Con rắn", "Con ma"], answer: 3 },
     { question: "Con gì càng to càng nhẹ?" , choices: ["Con voi", "Con bò", "Con ngựa", "Cái bong bóng"], answer: 3 },
     { question: "Con gì càng nhỏ càng nặng?" , choices: ["Hạt cát", "Hạt bụi", "Hạt gạo", "Hòn đá"], answer: 0 },
